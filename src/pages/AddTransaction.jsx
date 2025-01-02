@@ -99,7 +99,7 @@ function AddTransaction() {
               required
               value={transactionData.name}
               onChange={handleInputChange}
-              className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-lg p-4"
             />
           </div>
 
@@ -118,7 +118,7 @@ function AddTransaction() {
                 step="0.01"
                 value={transactionData.amount}
                 onChange={handleInputChange}
-                className="block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                className="block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-lg p-4"
               />
               <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                 <span className="text-gray-500 dark:text-gray-400 sm:text-sm">DZD</span>
@@ -138,7 +138,7 @@ function AddTransaction() {
               required
               value={transactionData.date}
               onChange={handleInputChange}
-              className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-lg p-4"
             />
           </div>
 
@@ -153,7 +153,7 @@ function AddTransaction() {
               required
               value={transactionData.category}
               onChange={handleInputChange}
-              className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-lg p-4"
             >
               <option value="">Select a category</option>
               {categories[transactionData.type].map((category) => (
